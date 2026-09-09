@@ -1,1 +1,1 @@
-# Laboratorio3
+# Cálculo ambulatorio del índice pletismográfico quirúrgico (SPI)
