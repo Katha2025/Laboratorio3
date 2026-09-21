@@ -122,9 +122,6 @@ Otro aspecto relevante señalado por Argüello-Prada es la influencia que pueden
 
 
 
-[8] E. J. Argüello-Prada, “The mountaineer's method for peak detection in photoplethysmographic signals,” *Revista Facultad de Ingeniería, Universidad de Antioquia*, no. 90, pp. 42–50, Jan.–Mar. 2019.
-
-
 ### Cold Pressor Test
 
 El Cold Pressor Test (CPT) es una maniobra experimental utilizada para provocar una respuesta cardiovascular y autonómica mediante la exposición de una extremidad, generalmente una mano, a agua fría. La aplicación de este estímulo activa mecanismos del sistema nervioso autónomo y puede producir modificaciones en variables cardiovasculares como la presión arterial y la frecuencia cardíaca. Por esta razón, el CPT puede utilizarse como una maniobra experimental para estudiar la respuesta fisiológica frente a un estímulo aversivo [6].
