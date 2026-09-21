@@ -211,6 +211,9 @@ El análisis de estas variables permite estudiar cambios fisiológicos asociados
 **• Pregunta 1: ¿Cómo se relacionan las variaciones del volumen sanguíneo
 periférico con el balance autonómico?**
 
+Las variaciones del volumen sanguíneo periférico observadas mediante la fotopletismografía (PPG) se relacionan principalmente con los cambios en el tono vascular producidos por el sistema nervioso autónomo. Ante una mayor activación simpática, se produce vasoconstricción de los vasos periféricos, lo que disminuye el volumen sanguíneo pulsátil en el tejido y, por tanto, puede reducir la amplitud de la onda PPG. Por el contrario, una menor vasoconstricción periférica puede favorecer una mayor amplitud de la componente pulsátil de la señal. Por esta razón, la amplitud de la PPG puede utilizarse como indicador indirecto de cambios en la actividad autonómica, aunque no constituye una medición directa del balance simpático-parasimpático. 
+
+Esta relación es importante para el Surgical Pleth Index (SPI), debido a que el índice utiliza información obtenida de la señal fotopletismográfica, específicamente la amplitud de la onda de pulso, junto con el intervalo entre latidos. Durante un estímulo nociceptivo, el incremento de la respuesta simpática puede producir vasoconstricción periférica y una disminución de la amplitud de la PPG; estos cambios contribuyen al aumento del SPI. Sin embargo, la señal también puede verse afectada por factores como la perfusión periférica, el estado hemodinámico, la temperatura y los artefactos de movimiento, por lo que los cambios del SPI deben interpretarse dentro del contexto fisiológico del paciente. 
 
 
 **• Pregunta 2: ¿Cómo se compara el SPI con otros índices comúnmente
