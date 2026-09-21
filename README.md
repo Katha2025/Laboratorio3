@@ -224,6 +224,11 @@ Esta relación es importante para el Surgical Pleth Index (SPI), debido a que el
 empleados en cirugía, como el índice nocicepción-analgesia (ANI) y el
 índice de perfusión?**
 
+El Surgical Pleth Index (SPI) y el Analgesia Nociception Index (ANI) son índices no invasivos utilizados durante la anestesia para evaluar cambios asociados con el balance entre nocicepción y antinocicepción, pero se basan en señales fisiológicas diferentes. El SPI se obtiene principalmente a partir de la señal fotopletismográfica y combina información relacionada con la amplitud de la onda de pulso y el intervalo entre latidos. El ANI, en cambio, se calcula a partir de la variabilidad de la frecuencia cardíaca y está relacionado principalmente con la actividad parasimpática. Por lo tanto, mientras el SPI incorpora una respuesta predominantemente periférica vascular junto con información cardíaca, el ANI se basa en la dinámica de la frecuencia cardíaca y la variabilidad de los intervalos entre latidos. 
+
+El índice de perfusión (PI), por su parte, también se obtiene a partir de una señal PPG, pero su finalidad es diferente. El PI representa la relación entre el componente pulsátil y el componente no pulsátil de la señal óptica y se utiliza como indicador de la perfusión periférica. Por esta razón, un cambio en el PI puede reflejar modificaciones en la perfusión o en el tono vascular, pero el PI por sí mismo no constituye un índice específico de nocicepción. En contraste, el SPI fue desarrollado específicamente para proporcionar una medida relacionada con el balance nocicepción-antinocicepción durante la anestesia. 
+
+En estudios comparativos, tanto SPI como ANI han mostrado cambios ante estímulos nociceptivos durante la anestesia. Sin embargo, sus respuestas no son idénticas porque se basan en mecanismos fisiológicos diferentes. Un estudio que comparó directamente ambos índices durante anestesia con sevoflurano y remifentanilo encontró que tanto ANI como SPI detectaron cambios asociados con eventos nociceptivos, lo que evidencia que pueden proporcionar información complementaria sobre la respuesta del organismo. 
 
 
 # Referencias
