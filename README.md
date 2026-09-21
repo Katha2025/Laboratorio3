@@ -4,3 +4,11 @@
 
 # Parte B
 # 1) Revisión de la literatura
+
+# 2) MATLAB
+
+# 3) "Pruebas y Cold Pressor Test"
+
+
+
+# 4) Evolución del SPI en función del tiempo 
