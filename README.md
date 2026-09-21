@@ -203,6 +203,17 @@ El análisis de estas variables permite estudiar cambios fisiológicos asociados
 
 
 
+**• Pregunta 1: ¿Cómo se relacionan las variaciones del volumen sanguíneo
+periférico con el balance autonómico?**
+
+
+
+**• Pregunta 2: ¿Cómo se compara el SPI con otros índices comúnmente
+empleados en cirugía, como el índice nocicepción-analgesia (ANI) y el
+índice de perfusión?**
+
+
+
 # Referencias
 
 [1] J. Allen, “Photoplethysmography and its application in clinical physiological measurement,” Physiological Measurement, vol. 28, no. 3, pp. R1–R39, 2007, doi: 10.1088/0967-3334/28/3/R01.
