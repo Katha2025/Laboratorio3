@@ -2,6 +2,11 @@
 
 # Parte A
 
+<p align="center">
+  <img width="400" alt="image" src="https://github.com/user-attachments/assets/f4745640-b05a-476d-b625-863986b7dc5c" />
+</p>
+
+
 # Parte B
 # 1) Revisión de la literatura
 
