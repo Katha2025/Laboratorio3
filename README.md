@@ -6,6 +6,10 @@
   <img width="400" alt="image" src="https://github.com/user-attachments/assets/f4745640-b05a-476d-b625-863986b7dc5c" />
 </p>
 
+<p align="center">
+  <strong>Figura 1. Circuito para capturar las variaciones del volumen sanguíneo periférico.</strong>
+</p>
+
 
 # Parte B
 # 1) Revisión de la literatura
