@@ -20,7 +20,7 @@ SPI = 100 - \left(0.7 \cdot PPGA_{norm} + 0.3 \cdot HBI_{norm}\right)
 $$
 
 
-donde ( $$PPGA_{norm} $$) corresponde a la amplitud de la onda pletismográfica normalizada y (HBI_{norm}) corresponde al intervalo entre latidos normalizado. La ecuación muestra que el SPI combina ambas variables para generar un valor único que representa cambios en la respuesta fisiológica asociada con la nocicepción [2].
+donde ( $$PPGA_{norm} $$) corresponde a la amplitud de la onda pletismográfica normalizada y ($$HBI_{norm}$$) corresponde al intervalo entre latidos normalizado. La ecuación muestra que el SPI combina ambas variables para generar un valor único que representa cambios en la respuesta fisiológica asociada con la nocicepción [2].
 
 En algunas publicaciones y documentos técnicos, los coeficientes de la ecuación aparecen expresados aproximadamente como 0.67 y 0.33. Por esta razón, la ecuación también puede encontrarse escrita como:
 
@@ -30,13 +30,114 @@ SPI=100-\left(0.67,PPGA_{norm}+0.33,HBI_{norm}\right)
 }
 $$
 
+Estas dos formas representan la misma estructura matemática: una combinación ponderada de las variables normalizadas de la amplitud pletismográfica y del intervalo entre latidos. La literatura utiliza esta formulación para representar mediante un único índice las modificaciones producidas en estas variables durante diferentes niveles de estimulación nociceptiva [2], [3].
+
+La normalización de las variables permite llevarlas a una escala común antes de realizar la combinación ponderada. De forma general, una normalización min–max puede expresarse como:
+
+$$
+\boxed{
+X_{norm}=
+\frac{X-X_{min}}
+{X_{max}-X_{min}}
+}
+$$
+
+donde (X) corresponde al valor medido de la variable, (X_{min}) corresponde al límite inferior utilizado para la normalización y ($$X_{max}$$) al límite superior. De esta manera, el resultado queda expresado en una escala comparable con las demás variables que participan en el cálculo [2].
+
+La PPGA corresponde a la amplitud de la onda de pulso registrada mediante PPG. Esta amplitud puede disminuir como consecuencia de la vasoconstricción periférica asociada con un incremento de la actividad simpática. Por otro lado, el HBI corresponde al intervalo temporal entre dos latidos cardíacos consecutivos. Las modificaciones de esta variable permiten incorporar al índice información relacionada con los cambios de la actividad cardiovascular y autonómica [2], [4].
+
+La relación entre las variables utilizadas por el SPI puede representarse conceptualmente mediante el siguiente procedimiento:
+
+$$
+\boxed{
+\text{Señal PPG}
+\rightarrow
+\text{detección de pulsos}
+\rightarrow
+PPGA
+}
+%%
+
+y:
+
+$$
+\boxed{
+\text{Señal PPG}
+\rightarrow
+\text{detección de latidos}
+\rightarrow
+HBI
+}
+$$
+
+Posteriormente, ambas variables son normalizadas:
 
 
+$$
+\boxed{
+PPGA\rightarrow PPGA_{norm}
+}
+$$
+
+$$
+\boxed{
+HBI\rightarrow HBI_{norm}
+}
+$$
+
+y finalmente se calcula:
+
+$$
+\boxed{
+PPGA_{norm}+HBI_{norm}
+\rightarrow SPI
+}
+$$
+
+De acuerdo con Huiku et al., el desarrollo del SPI se fundamentó en la relación existente entre las variables derivadas de la PPG y la respuesta fisiológica observada durante estímulos quirúrgicos y diferentes niveles de analgesia. El índice fue diseñado para proporcionar una medida objetiva que pudiera complementar las variables hemodinámicas tradicionales durante la anestesia general [2].
+
+El significado fisiológico del SPI está relacionado principalmente con la activación del sistema nervioso autónomo. Una mayor activación simpática puede producir vasoconstricción periférica y, como consecuencia, modificar la amplitud de la señal PPG. Al mismo tiempo, los cambios en la actividad cardiovascular pueden modificar el intervalo entre latidos. Por esta razón, las dos variables utilizadas en el SPI permiten integrar información relacionada con la respuesta autonómica frente a estímulos nociceptivos [2], [4].
+
+Sin embargo, el SPI no constituye una medición directa del dolor. La nocicepción corresponde al procesamiento neural de estímulos potencialmente dañinos, mientras que el dolor es una experiencia sensorial y emocional que no puede determinarse exclusivamente mediante una señal fisiológica. Esta diferencia es particularmente importante durante la anestesia general, donde el paciente no puede comunicar directamente su percepción. En este contexto, el SPI busca proporcionar información objetiva sobre la respuesta fisiológica asociada con la nocicepción, pero debe interpretarse junto con otras variables y con las condiciones clínicas del paciente [3], [5].
+
+Bonhomme et al. compararon el SPI con variables hemodinámicas durante la anestesia general y encontraron que el índice podía proporcionar información adicional relacionada con el balance entre nocicepción y antinocicepción. No obstante, las respuestas fisiológicas utilizadas por el SPI también pueden modificarse por factores diferentes al estímulo nociceptivo, por lo que un cambio en el índice no debe interpretarse automáticamente como una medida directa de la intensidad del dolor [4].
+
+Entre los factores que pueden afectar la señal PPG se encuentran la perfusión periférica, el tono vascular, la temperatura, los cambios hemodinámicos y otros factores que modifican la circulación periférica. Asimismo, existe variabilidad individual en la respuesta del sistema nervioso autónomo. Por estas razones, el SPI presenta limitaciones cuando se pretende utilizar como único indicador de nocicepción y su interpretación debe realizarse considerando el contexto fisiológico y las demás variables disponibles [3], [5].
+
+Cold Pressor Test
+
+El Cold Pressor Test (CPT) es una maniobra experimental utilizada para provocar una respuesta cardiovascular y autonómica mediante la exposición de una extremidad, generalmente una mano, a agua fría. La aplicación de este estímulo activa mecanismos del sistema nervioso autónomo y puede producir modificaciones en variables cardiovasculares como la presión arterial y la frecuencia cardíaca. Por esta razón, el CPT puede utilizarse como una maniobra experimental para estudiar la respuesta fisiológica frente a un estímulo aversivo [6].
+
+Wirch et al. evaluaron el CPT como una técnica para estudiar la función autonómica cardiovascular y observaron cambios en la actividad simpática y parasimpática durante la exposición al frío. Estos resultados respaldan el uso del CPT como un estímulo capaz de producir una respuesta autonómica medible [6].
+
+Para esta práctica, la utilización del CPT resulta relevante porque permite generar un estímulo fisiológico controlado durante la adquisición de la señal PPG. La guía establece que el voluntario debe registrar inicialmente el SPI durante 40 segundos, realizar posteriormente el CPT durante otros 40 segundos y finalmente regresar a las condiciones iniciales durante los últimos 40 segundos de la captura de dos minutos.
+
+Por lo tanto, experimentalmente se espera comparar tres condiciones:
 
 
+$$
+\boxed{
+\text{Reposo inicial}
+\rightarrow
+\text{CPT}
+\rightarrow
+\text{Recuperación}
+}
+$$
 
+Durante cada una de estas etapas se puede observar la evolución de la señal PPG, calcular las variables necesarias y determinar el SPI correspondiente a cada pulsación. Esto permite analizar si la respuesta autonómica producida por el CPT se acompaña de modificaciones en las características de la señal pletismográfica y, en consecuencia, en el valor calculado del SPI.
 
+Es importante considerar que la respuesta al CPT depende de las condiciones experimentales, incluyendo la temperatura del agua, la duración de la exposición y las características individuales del participante. Por esta razón, estos parámetros deben mantenerse controlados y registrarse durante la práctica para facilitar la interpretación de los resultados [6], [7].
 
+En conclusión, la literatura establece que el SPI es un índice derivado de variables obtenidas principalmente a partir de la señal fotopletismográfica y del intervalo entre latidos. Su formulación matemática combina las variables normalizadas mediante una suma ponderada, de acuerdo con:
+
+$$
+\boxed{
+SPI=100-\left(0.7,PPGA_{norm}+0.3,HBI_{norm}\right)
+}
+$$
+
+El análisis de estas variables permite estudiar cambios fisiológicos asociados con la actividad autonómica durante estímulos nociceptivos. En la presente práctica, la adquisición de la PPG y la aplicación del CPT permiten estudiar experimentalmente la relación entre las variaciones del volumen sanguíneo periférico, la respuesta autonómica y el SPI, teniendo en cuenta que este índice no constituye por sí mismo una medición directa de la percepción subjetiva del dolor [2]–[7].
 
 
 
