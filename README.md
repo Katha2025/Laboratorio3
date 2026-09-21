@@ -12,3 +12,27 @@
 
 
 # 4) Evolución del SPI en función del tiempo 
+
+
+
+
+# Parte C
+
+
+
+# Análisis de los Resultados 
+
+
+
+# Conclusión
+
+
+# Preguntas
+
+
+
+# Referencias
+
+
+
+
