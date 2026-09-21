@@ -104,6 +104,27 @@ Bonhomme et al. compararon el SPI con variables hemodinámicas durante la aneste
 
 Entre los factores que pueden afectar la señal PPG se encuentran la perfusión periférica, el tono vascular, la temperatura, los cambios hemodinámicos y otros factores que modifican la circulación periférica. Asimismo, existe variabilidad individual en la respuesta del sistema nervioso autónomo. Por estas razones, el SPI presenta limitaciones cuando se pretende utilizar como único indicador de nocicepción y su interpretación debe realizarse considerando el contexto fisiológico y las demás variables disponibles [3], [5].
 
+### Detección de picos y valles en señales PPG
+
+La detección de picos y valles constituye una etapa fundamental en el procesamiento de señales fotopletismográficas (PPG), debido a que permite identificar las pulsaciones individuales y extraer características temporales y morfológicas de cada ciclo cardíaco. Argüello-Prada propuso el *Mountainner's Method for Peak Detection* (MMPD), un método diseñado específicamente para detectar picos sistólicos y valles en señales PPG. El algoritmo se basa en analizar la tendencia ascendente y descendente de la señal mediante el conteo de muestras consecutivas que mantienen una determinada pendiente, permitiendo localizar los puntos característicos de cada pulsación. [8]
+
+El método MMPD utiliza un umbral para determinar cuándo una variación en la pendiente de la señal puede corresponder a un pico o un valle. Inicialmente, el algoritmo establece un valor de seis muestras y posteriormente actualiza el umbral de acuerdo con el número de pasos consecutivos identificados mediante la expresión:
+$$
+[
+\boxed{threshold=0.6,num_steps}
+]
+$$
+donde (num_steps) corresponde al número de muestras consecutivas que mantienen la misma tendencia. Este procedimiento permite adaptar la detección a cambios en la señal y disminuir la dependencia de una amplitud fija, aspecto relevante debido a que la amplitud de la señal PPG puede variar entre sujetos y bajo diferentes condiciones de adquisición. [8]
+
+La detección adecuada de estos puntos es especialmente relevante para el análisis posterior de la señal PPG, ya que permite delimitar cada pulsación y obtener variables como la amplitud del pulso y el intervalo temporal entre latidos. En el contexto del Surgical Pleth Index (SPI), estas características son necesarias para obtener los parámetros asociados con la amplitud de la señal fotopletismográfica y con el intervalo entre latidos, que posteriormente participan en el cálculo del índice. Por lo tanto, aunque el método MMPD no corresponde al algoritmo de cálculo del SPI, constituye una referencia importante para la etapa de procesamiento y detección de eventos de la señal PPG requerida antes de calcular dicho índice. [8]
+
+Otro aspecto relevante señalado por Argüello-Prada es la influencia que pueden tener el ruido y los artefactos de movimiento sobre la detección de picos y valles. El estudio evaluó el comportamiento de diferentes algoritmos bajo distintas amplitudes de señal y condiciones de movimiento, mostrando que la reducción de la amplitud y la presencia de artefactos pueden aumentar la dificultad para identificar correctamente los eventos de la señal. Esto evidencia la importancia de realizar una adecuada adquisición y procesamiento de la señal PPG antes de utilizar sus características para análisis fisiológicos. [8]
+
+### Referencia nueva
+
+[8] E. J. Argüello-Prada, “The mountaineer's method for peak detection in photoplethysmographic signals,” *Revista Facultad de Ingeniería, Universidad de Antioquia*, no. 90, pp. 42–50, Jan.–Mar. 2019.
+
+
 Cold Pressor Test
 
 El Cold Pressor Test (CPT) es una maniobra experimental utilizada para provocar una respuesta cardiovascular y autonómica mediante la exposición de una extremidad, generalmente una mano, a agua fría. La aplicación de este estímulo activa mecanismos del sistema nervioso autónomo y puede producir modificaciones en variables cardiovasculares como la presión arterial y la frecuencia cardíaca. Por esta razón, el CPT puede utilizarse como una maniobra experimental para estudiar la respuesta fisiológica frente a un estímulo aversivo [6].
