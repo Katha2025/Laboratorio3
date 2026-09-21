@@ -110,9 +110,9 @@ La detección de picos y valles constituye una etapa fundamental en el procesami
 
 El método MMPD utiliza un umbral para determinar cuándo una variación en la pendiente de la señal puede corresponder a un pico o un valle. Inicialmente, el algoritmo establece un valor de seis muestras y posteriormente actualiza el umbral de acuerdo con el número de pasos consecutivos identificados mediante la expresión:
 $$
-[
+
 \boxed{threshold=0.6,num_steps}
-]
+
 $$
 donde (num_steps) corresponde al número de muestras consecutivas que mantienen la misma tendencia. Este procedimiento permite adaptar la detección a cambios en la señal y disminuir la dependencia de una amplitud fija, aspecto relevante debido a que la amplitud de la señal PPG puede variar entre sujetos y bajo diferentes condiciones de adquisición. [8]
 
