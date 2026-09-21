@@ -1,4 +1,6 @@
 # Cálculo ambulatorio del índice pletismográfico quirúrgico (SPI)
-# Revisión de la literatura
 
 # Parte A
+
+# Parte B
+# 1) Revisión de la literatura
