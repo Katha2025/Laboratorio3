@@ -187,6 +187,20 @@ El análisis de estas variables permite estudiar cambios fisiológicos asociados
 
 # Referencias
 
+[1] J. Allen, “Photoplethysmography and its application in clinical physiological measurement,” Physiological Measurement, vol. 28, no. 3, pp. R1–R39, 2007, doi: 10.1088/0967-3334/28/3/R01.
+
+[2] M. Huiku, K. Uutela, M. van Gils, I. Korhonen, M. Kymäläinen, P. Meriläinen, M. Paloheimo, M. Rantanen, P. Takala, H. Viertiö-Oja, and A. Yli-Hankala, “Assessment of surgical stress during general anaesthesia,” British Journal of Anaesthesia, vol. 98, no. 4, pp. 447–455, 2007, doi: 10.1093/bja/aem004.
+
+[3] T. Ledowski, “Objective monitoring of nociception: a review of current commercial solutions,” British Journal of Anaesthesia, vol. 123, no. 2, pp. e312–e321, 2019, doi: 10.1016/j.bja.2019.03.024.
+
+[4] V. Bonhomme, K. Uutela, G. Hans, I. Maquoi, J. D. Born, and J. F. Brichant, “Comparison of the Surgical Pleth Index™ with haemodynamic variables to assess nociception-anti-nociception balance during general anaesthesia,” British Journal of Anaesthesia, vol. 106, no. 1, pp. 101–111, 2011, doi: 10.1093/bja/aeq291.
+
+[5] S. Funcke, S. Sauerlaender, H. O. Pinnschmidt, B. Saugel, K. Bremer, D. A. Reuter, R. Nitzschke, et al., “Validation of innovative techniques for monitoring nociception during general anesthesia: a clinical study using tetanic and intracutaneous electrical stimulation,” Anesthesiology, vol. 127, no. 2, pp. 272–283, 2017, doi: 10.1097/ALN.0000000000001670.
+
+[6] J. L. Wirch, L. A. Wolfe, T. L. Weissgerber, and G. A. L. Davies, “Cold pressor test protocol to evaluate cardiac autonomic function,” Applied Physiology, Nutrition, and Metabolism, vol. 31, no. 3, pp. 235–243, 2006, doi: 10.1139/h05-018.
+
+[7] S. Fanninger, P. L. Plener, M. J. M. Fischer, O. D. Kothgassner, and A. Goreis, “Water temperature during the cold pressor test: A scoping review,” Physiology & Behavior, vol. 271, Art. no. 114354, 2023, doi: 10.1016/j.physbeh.2023.114354.
+
 
 
 
