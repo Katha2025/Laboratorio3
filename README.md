@@ -17,10 +17,17 @@ $$
 \boxed{
 SPI = 100 - \left(0.7 \cdot PPGA_{norm} + 0.3 \cdot HBI_{norm}\right)
 }
+$$
 
-donde ( $$PPGA_{norm}) corresponde a la amplitud de la onda pletismográfica normalizada y (HBI_{norm}) corresponde al intervalo entre latidos normalizado. La ecuación muestra que el SPI combina ambas variables para generar un valor único que representa cambios en la respuesta fisiológica asociada con la nocicepción [2].
+
+donde ( $$PPGA_{norm} $$) corresponde a la amplitud de la onda pletismográfica normalizada y (HBI_{norm}) corresponde al intervalo entre latidos normalizado. La ecuación muestra que el SPI combina ambas variables para generar un valor único que representa cambios en la respuesta fisiológica asociada con la nocicepción [2].
 
 En algunas publicaciones y documentos técnicos, los coeficientes de la ecuación aparecen expresados aproximadamente como 0.67 y 0.33. Por esta razón, la ecuación también puede encontrarse escrita como:
+
+$$
+\boxed{
+SPI=100-\left(0.67,PPGA_{norm}+0.33,HBI_{norm}\right)
+}
 $$
 
 
