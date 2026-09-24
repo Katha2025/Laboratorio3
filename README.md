@@ -10,10 +10,14 @@
   <strong>Figura 1. Circuito para capturar las variaciones del volumen sanguíneo periférico.</strong>
 </p>
 
-
+<p align="center">
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/52b408fa-cf27-420c-b506-d1e81c147fac" />
+</p>
 
-
+<p align="center">
+ <strong>Figura 2. Montaje del circuito para capturar las variaciones del volumen sanguíneo periférico.</strong>
+</p>
+ 
 
 # Parte B
 # 1) Revisión de la literatura
