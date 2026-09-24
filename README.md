@@ -59,7 +59,7 @@ X_{norm}=
 }
 $$
 
-donde (X) corresponde al valor medido de la variable, (X_{min}) corresponde al límite inferior utilizado para la normalización y ($$X_{max}$$) al límite superior. De esta manera, el resultado queda expresado en una escala comparable con las demás variables que participan en el cálculo [2].
+donde (X) corresponde al valor medido de la variable, ($$X_{min}$$) corresponde al límite inferior utilizado para la normalización y ($$X_{max}$$) al límite superior. De esta manera, el resultado queda expresado en una escala comparable con las demás variables que participan en el cálculo [2].
 
 La PPGA corresponde a la amplitud de la onda de pulso registrada mediante PPG. Esta amplitud puede disminuir como consecuencia de la vasoconstricción periférica asociada con un incremento de la actividad simpática. Por otro lado, el HBI corresponde al intervalo temporal entre dos latidos cardíacos consecutivos. Las modificaciones de esta variable permiten incorporar al índice información relacionada con los cambios de la actividad cardiovascular y autonómica [2], [4].
 
