@@ -2,6 +2,10 @@
 
 # Parte A
 
+## Procedimiento:
+
+1. Para iniciar, se hizo la construcción del circuito dado en la guía de laboratorio. Tras hacer el montaje y verificar su funcionamiento, se hicieron cambios para adaptar el circuito a las necesidades de la práctica. No se vio necesario incluir la ultima fase amplificadora, sin embargo fue necesario incluir la fuente del propio microcontrolador por medio de un divisor de voltaje para añadirle un offset a la señal.
+
 <p align="center">
 <img width="400"  alt="image" src="https://github.com/user-attachments/assets/c4b0249a-c5be-4507-b2f0-4f7c5450a987" />
 </p>
