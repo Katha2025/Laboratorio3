@@ -73,7 +73,6 @@ $$
 \rightarrow
 PPGA
 }
-
 $$
 
 y:
