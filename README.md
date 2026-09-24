@@ -113,7 +113,7 @@ Bonhomme et al. compararon el SPI con variables hemodinámicas durante la aneste
 
 Entre los factores que pueden afectar la señal PPG se encuentran la perfusión periférica, el tono vascular, la temperatura, los cambios hemodinámicos y otros factores que modifican la circulación periférica. Asimismo, existe variabilidad individual en la respuesta del sistema nervioso autónomo. Por estas razones, el SPI presenta limitaciones cuando se pretende utilizar como único indicador de nocicepción y su interpretación debe realizarse considerando el contexto fisiológico y las demás variables disponibles [3], [5].
 
-### Detección de picos y valles en señales PPG
+### Detección de picos y valles en señales PPG (Método del alpinista)
 
 La detección de picos y valles constituye una etapa fundamental en el procesamiento de señales fotopletismográficas (PPG), debido a que permite identificar las pulsaciones individuales y extraer características temporales y morfológicas de cada ciclo cardíaco. Argüello-Prada propuso el *Mountainner's Method for Peak Detection* (MMPD), un método diseñado específicamente para detectar picos sistólicos y valles en señales PPG. El algoritmo se basa en analizar la tendencia ascendente y descendente de la señal mediante el conteo de muestras consecutivas que mantienen una determinada pendiente, permitiendo localizar los puntos característicos de cada pulsación. [8]
 
