@@ -11,6 +11,10 @@
 </p>
 
 
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/52b408fa-cf27-420c-b506-d1e81c147fac" />
+
+
+
 # Parte B
 # 1) Revisión de la literatura
 
