@@ -226,6 +226,26 @@ El análisis de estas variables permite estudiar cambios fisiológicos asociados
 ## Procedimiento:
 ### 2) MATLAB
 
+Se desarrolló un código en MATLAB para adquirir la señal fotopletismográfica proveniente del circuito de la Parte A y de la ESP32-S3. Inicialmente, el programa limpia las variables y configura los parámetros de adquisición: el puerto serial COM6, una velocidad de transmisión de 115200 baudios, una frecuencia de muestreo de 100 Hz y una duración de captura de 120 segundos. Con estos parámetros se registran un total de 12000 muestras.
+
+Posteriormente, el código crea la conexión serial con la ESP32-S3 y configura el terminador de línea LF, ya que el microcontrolador envía cada muestra como una línea de texto. Después de esperar dos segundos para permitir el reinicio de la placa, se eliminan los datos anteriores almacenados en el búfer serial.
+
+Durante la etapa de adquisición, MATLAB lee cada línea enviada por la ESP32-S3 y la convierte a un valor numérico. Únicamente se almacenan las muestras válidas; de esta manera se genera el vector senalCruda, correspondiente a la señal PPG registrada durante los 120 segundos.
+
+Una vez finalizada la captura, se construye el vector de tiempo a partir de la frecuencia de muestreo. La señal cruda se suaviza utilizando un promedio móvil de cinco muestras mediante la función movmean. Este procesamiento reduce las variaciones rápidas y el ruido presente en la señal, sin modificar de forma significativa la forma general de los pulsos.
+
+Para identificar las características de cada pulso se implementó el método del alpinista o Mountaineer’s Method for Peak Detection (MMPD). El algoritmo analiza los cambios ascendentes y descendentes de la señal suavizada. Cuando detecta una subida con una cantidad suficiente de muestras consecutivas, identifica un posible pico sistólico; además, localiza el valor mínimo anterior como valle de la señal.
+
+El método utiliza inicialmente un umbral de seis muestras consecutivas en ascenso. Después de detectar un pico, este umbral se ajusta de forma adaptativa al 60 % del número de muestras ascendentes detectadas. Esto permite que el algoritmo se adapte a variaciones en la forma y duración de los pulsos PPG.
+
+A partir de los picos sistólicos detectados se calcula una frecuencia cardíaca aproximada. Para ello, se determina el intervalo temporal entre picos consecutivos y se utiliza la relación:
+
+$$ FC = \frac{60}{\overline{RR}} $$
+
+donde \(\overline{RR}\) corresponde al promedio de los intervalos entre picos, expresado en segundos. El resultado se muestra en la ventana de comandos de MATLAB en latidos por minuto.
+
+Finalmente, el programa genera dos gráficas. La primera corresponde a la señal PPG cruda adquirida desde la ESP32-S3. La segunda presenta la señal suavizada junto con los picos sistólicos y valles detectados por el método del alpinista. Además, se guardan el tiempo, la señal cruda y la señal suavizada en el archivo senal_ppgs.csv, el cual se utiliza posteriormente para calcular y representar la evolución temporal del SPI
+
 ### 3) "Pruebas y Cold Pressor Test"
 
 
