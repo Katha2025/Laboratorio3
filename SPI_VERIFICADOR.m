@@ -5,7 +5,7 @@ close all;
 % =========================================================
 % CONFIGURACIÓN
 % =========================================================
-archivoCSV = "senal_ppg_12000s.csv";
+archivoCSV = "senal_ppgs.csv";
 
 % Leer datos guardados por el programa anterior
 datos = readtable(archivoCSV);
