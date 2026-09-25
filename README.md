@@ -2,9 +2,14 @@
 
 # Parte A
 
+## Procedimiento
+
+1) Para lograr desarrollar un sistema de medición continua del indice pletismográfico (SPI) primero se construyó el circuito de adquisición. Este se hizo a partir del circuito proporcionado en la guiua de laboratorio. Tras hacer el montaje y algunas pruebas, se hicieron algunas modificaciones para adaptar el circuito a las necesidades de la práctica. No se vio necesario agregar la ultima fase de amplificación ya que el circuito captava y mostraba la señal correcta sin el. Además de que fue necesario añadir un offset, para observar la señal en un rango correcto, por medio de la fuente del microcontrolador agregado al circuito con un divisor del voltaje.
+
 <p align="center">
 <img width="400"  alt="image" src="https://github.com/user-attachments/assets/c4b0249a-c5be-4507-b2f0-4f7c5450a987" />
 </p>
+*Imágen 1. Dibujo del circuito usado.*
 
 <p align="center">
   <strong>Figura 1. Circuito para capturar las variaciones del volumen sanguíneo periférico.</strong>
