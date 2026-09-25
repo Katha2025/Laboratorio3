@@ -294,6 +294,22 @@ Durante las tres etapas se almacenó la señal adquirida en un archivo CSV. Post
 
 ### 4) Evolución del SPI en función del tiempo 
 
+Una vez finalizada la adquisición de la señal PPG, se utilizó el archivo CSV generado por el primer código para calcular la evolución temporal del Surgical Pleth Index (SPI). Para ello se empleó el código **SPI_VERIFICADOR.m**, el cual lee la señal almacenada y realiza nuevamente el procesamiento necesario para obtener el SPI asociado a cada latido.
+
+Inicialmente, el programa carga las columnas de tiempo, señal PPG cruda y señal PPG suavizada desde el archivo CSV. Posteriormente, aplica el método del alpinista de manera interna para identificar los picos sistólicos y valles de la señal. Estos eventos no se muestran en la gráfica final, pero son necesarios para extraer las variables fisiológicas utilizadas en el cálculo del índice.
+
+Para cada pulsación se obtiene la amplitud de la onda pletismográfica, PPGA, calculada como la diferencia entre el pico sistólico y el valle anterior. También se calcula el intervalo entre latidos, HBI, a partir de la diferencia de tiempo entre picos sistólicos consecutivos. Ambas variables se normalizan entre 0 y 100 y se combinan mediante la ecuación:
+
+$$
+SPI = 100 - \left(0.7 \cdot PPGA_{norm} + 0.3 \cdot HBI_{norm}\right)
+$$
+
+El resultado es un valor de SPI estimado para cada latido detectado. Finalmente, el programa representa estos valores en una gráfica en función del tiempo, con un rango entre 0 y 100. La gráfica permite comparar el comportamiento del índice durante las tres etapas del protocolo experimental: reposo inicial, aplicación del estímulo frío y recuperación.
+
+El código utilizado para esta etapa se encuentra disponible en el siguiente enlace:
+
+**Código 2.** [Cálculo y gráfica de SPI por latido](SPI_VERIFICADOR.m)
+
 
 # Resultados
 
