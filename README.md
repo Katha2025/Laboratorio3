@@ -210,24 +210,6 @@ $$
 El análisis de estas variables permite estudiar cambios fisiológicos asociados con la actividad autonómica durante estímulos nociceptivos. En la presente práctica, la adquisición de la PPG y la aplicación del CPT permiten estudiar experimentalmente la relación entre las variaciones del volumen sanguíneo periférico, la respuesta autonómica y el SPI, teniendo en cuenta que este índice no constituye por sí mismo una medición directa de la percepción subjetiva del dolor [2]–[7].
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Procedimiento:
 ### 2) MATLAB
 
@@ -400,6 +382,13 @@ A partir de estos resultados es posible decir que el el sistema fue capaz de adq
 
 # Conclusión
 
+En esta práctica se tuvo el objetivo de dar con las características fundamentales de la onda pulso y construir un sistema ambulatorio para la obtención continua del índice pletismográfico quirúrgico (SPI), utilizando una señal PPG y el método del alpinista para la detección de picos y valles. Con los resultados observados previamente, se permite diferenciar que el sistema fue capaz de adquirir la señal PPG de manera continua, identificar sus principales eventos y calcular el SPI durante las diferentes etapas del experimento.
+
+Al aplicar un estímulo frío se produjo un aumneto del SPI, pasando de un promedio de 27.94 unidades en condiciones basales a 51.88 unidades durante el estímulo, mientras que durante la recuperación disminuyó a 30.94, acercándose al valor basal. Este comportamiento vino acompañado de una disminución en amplitud de la señal PPG durante el estímulo. En adición, la frecuencia cardíaca promedio presentó una variación mínima entre el reposo y el estímulo. Se podría decir que estos resultados muestran una variación temporal del SPI asociada con el estímulo frío.
+
+Al obtener el SPI mediante la señal PPG se permite analizar cambios en la respuesta fisiológica a partir de parámetros como el PPGA y el HBI. Con esto, el sistema desarrollado permite relacionar los cambios observados en la señal pletismográfica con la variación del SPI. Aun así, debido a que en la práctica hubieron factores como el movimiento, el ruido y la presión del dedo la detección de picos y valles pudo haber sido afectada.
+
+En el futuro, sería conveniente realizar nuevas pruebas con diferentes sujetos y condiciones experimentales, así como mejorar el control de los posibles artefactos durante la adquisición de la señal. Se daría paso a la evaluación con mayor detalle del comportamiento del sistema y determinar la reproducibilidad de las variaciones observadas en el SPI ante el estímulo frío.
 
 # Preguntas
 
