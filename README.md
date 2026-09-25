@@ -378,6 +378,13 @@ La Tabla 1 resume los valores de SPI estimados para cada etapa del protocolo. Ad
 
 En esta práctica de laboratorio se buscó reconocer las características fundamentales de la onda pulso y construir un sistema de obtención de SPI. Para esto se construyó un sistema ambulatorio de medición continua del índice pletismográfico quirúrgico. A este se le validó el funcionamiento mediante la medición de SPI durante una respuesta fisiológica parecida al dolor agudo. En la tabla 1 se observa como los resultados muestran un cambio significante del SPI cuando se aplica el estímulo frío. En promedio, el valor de SPI aumenta considerablemente durante el estimulo, pasando de 27.92 a 51.88. Esto es un incremento del 85.82% (51.88 - 27.92 = 23.96 / 27.92 = 0.8582 *100 = 85.82 %) respecto al valor basal. En el periodo de recuperación, el SPI disminuyó a un promedio de 30.94 acercandose nuevamente al valor basal. Esto indica que la respuesta que fue producida durante el estimulo frio fue transitoria y asociada temporalmente al frío. 
 
+Continuando, se diferencia una relación entre la amplitud de la señal PPG y el aumento del SPI. En la figura 14 se visualiza como durante el estímulo la amplitud de la señal PPG disminuye mientras que el SPI aumenta. Esta relación está vinculada a la ecuación de SPI $$
+\boxed{
+SPI = 100 - \left(0.7 \cdot PPGA_{norm} + 0.3 \cdot HBI_{norm}\right)
+}
+$$
+
+
 # Conclusión
 
 
