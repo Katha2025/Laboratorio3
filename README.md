@@ -242,12 +242,54 @@ A partir de los picos sistólicos detectados se calcula una frecuencia cardíaca
 
 $$ FC = \frac{60}{\overline{RR}} $$
 
-donde \(\overline{RR}\) corresponde al promedio de los intervalos entre picos, expresado en segundos. El resultado se muestra en la ventana de comandos de MATLAB en latidos por minuto.
+donde RR corresponde al promedio de los intervalos entre picos, expresado en segundos. El resultado se muestra en la ventana de comandos de MATLAB en latidos por minuto.
 
 Finalmente, el programa genera dos gráficas. La primera corresponde a la señal PPG cruda adquirida desde la ESP32-S3. La segunda presenta la señal suavizada junto con los picos sistólicos y valles detectados por el método del alpinista. Además, se guardan el tiempo, la señal cruda y la señal suavizada en el archivo senal_ppgs.csv, el cual se utiliza posteriormente para calcular y representar la evolución temporal del SPI
 
+El código completo utilizado para la adquisición, procesamiento y detección de picos y valles se encuentra disponible en el siguiente enlace:
+
+**Código 1.** [Adquisición de señal PPG y método del alpinista](METODODELALPINIST120SEG.m)
+
 ### 3) "Pruebas y Cold Pressor Test"
 
+Para evaluar los cambios en la señal PPG y en el SPI estimado ante un estímulo térmico, se realizó una prueba de 120 segundos con un voluntario sano. Durante toda la prueba, el voluntario permaneció sentado y mantuvo el dedo índice sobre el sensor óptico de reflectancia, procurando no ejercer cambios bruscos de presión ni realizar movimientos que pudieran generar artefactos en la señal.
+
+La adquisición se dividió en tres etapas de 40 segundos. Durante los primeros 40 segundos se registró la señal en condición basal o de reposo. Esta etapa permitió obtener una referencia inicial de las características de la señal PPG y del SPI antes de aplicar el estímulo.
+
+Entre los segundos 40 y 80 se aplicó un estímulo frío mediante una botella previamente enfriada. La botella se ubicó en la región cervical y superior del tórax del voluntario, mientras el dedo utilizado para la adquisición permaneció fijo sobre el sensor. De esta manera, se buscó inducir una respuesta autonómica asociada con la exposición al frío sin interrumpir el registro de la señal PPG.
+
+Finalmente, entre los segundos 80 y 120 se retiró la botella fría y se continuó el registro durante la etapa de recuperación. Esta fase permitió observar el comportamiento de la señal y del SPI estimado después de finalizar el estímulo térmico.
+
+La prueba realizada corresponde a una adaptación del Cold Pressor Test (CPT). En el CPT convencional, una extremidad se sumerge en agua fría; en este caso, se utilizó una botella enfriada como fuente de estímulo frío. Por esta razón, los resultados obtenidos se interpretan como una respuesta fisiológica al frío dentro de las condiciones experimentales del laboratorio y no como una medición clínica de dolor o nocicepción.
+
+Durante las tres etapas se almacenó la señal adquirida en un archivo CSV. Posteriormente, dicho archivo fue procesado mediante el código de verificación del SPI para obtener un valor estimado por cada latido y representar su evolución en función del tiempo.
+
+<p align="center">
+ <img width="1280" height="960" alt="image" src="https://github.com/user-attachments/assets/552d9dad-dca4-4594-92a0-f2002c77ab19" />
+
+</p>
+
+<p align="center">
+  <strong>Figura 7. Montaje experimental durante la adquisición basal de la señal PPG.</strong>
+</p>
+
+<p align="center">
+  <img width="1280" height="960" alt="image" src="https://github.com/user-attachments/assets/7391625e-7985-4c63-8f16-633ffc7ef36d" />
+
+</p>
+
+<p align="center">
+  <strong>Figura 8. Conexión del sensor óptico y ubicación del dedo del voluntario durante la adquisición.</strong>
+</p>
+
+<p align="center">
+ <img width="1280" height="960" alt="image" src="https://github.com/user-attachments/assets/2826f710-0afa-46f3-a684-a7fa23da42dc" />
+
+</p>
+
+<p align="center">
+  <strong>Figura 9. Aplicación del estímulo frío adaptado mediante una botella previamente enfriada, sin interrumpir la adquisición de la señal PPG.</strong>
+</p>
 
 
 ### 4) Evolución del SPI en función del tiempo 
