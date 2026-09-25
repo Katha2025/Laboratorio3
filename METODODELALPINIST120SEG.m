@@ -8,7 +8,7 @@ puerto = "COM6";
 baudios = 115200;
 fs = 100;                  % Hz, igual que el ESP
 duracion = 120;             % segundos
-N = fs * duracion;         % 3000 muestras
+N = fs * duracion;         % 12000 muestras
 
 % ---------- Conexión con ESP ----------
 esp = serialport(puerto, baudios);
@@ -20,7 +20,7 @@ flush(esp);                % Eliminar datos anteriores
 
 senalCruda = zeros(N, 1);
 
-disp("Grabando señal PPG durante 30 segundos...");
+disp("Grabando señal PPG durante 120 segundos...");
 disp("Mantén el dedo quieto sobre el sensor.");
 
 % ---------- Adquisición ----------
