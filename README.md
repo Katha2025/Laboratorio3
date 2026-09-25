@@ -348,6 +348,19 @@ A partir de los picos y valles detectados se calculó la amplitud de pulso fotop
 
 **Figura 14.** Señal PPG, picos y valles detectados, y evolución del SPI calculado para cada latido durante el protocolo de reposo, estímulo frío adaptado y recuperación.
 
+
+## Resumen cuantitativo por etapa
+
+La Tabla 1 resume los valores de SPI estimados para cada etapa del protocolo. Además del promedio, se reporta la mediana para reducir la influencia de valores atípicos, como el pico puntual de SPI igual a 100 observado durante la aplicación del estímulo frío.
+
+| Etapa | Intervalo (s) | Latidos analizados | SPI promedio | SPI mediano | SPI mínimo | SPI máximo | FC promedio (lpm) |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Reposo basal | 0–40 | 66 | 27.92 | 24.77 | 2.50 | 52.22 | 101.1 |
+| Estímulo frío adaptado | 40–80 | 68 | 51.88 | 51.90 | 32.44 | 100.00 | 101.2 |
+| Recuperación | 80–120 | 68 | 30.94 | 29.42 | 15.00 | 51.46 | 103.3 |
+
+**Tabla 1.** Resumen de los valores de SPI y de frecuencia cardíaca estimados durante las tres etapas del protocolo.
+
 # Análisis de los Resultados 
 
 
