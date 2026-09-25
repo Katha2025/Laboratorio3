@@ -370,11 +370,13 @@ La Tabla 1 resume los valores de SPI estimados para cada etapa del protocolo. Ad
 | Estímulo frío adaptado | 40–80 | 68 | 51.88 | 51.90 | 32.44 | 100.00 | 101.2 |
 | Recuperación | 80–120 | 68 | 30.94 | 29.42 | 15.00 | 51.46 | 103.3 |
 
-**Tabla 1.** Resumen de los valores de SPI y de frecuencia cardíaca estimados durante las tres etapas del protocolo.
+<p align="center">
+  <strong>Tabla 1. Resumen de los valores de SPI y de frecuencia cardíaca estimados durante las tres etapas del protocolo.</strong>
+</p>
 
 # Análisis de los Resultados 
 
-
+En esta práctica de laboratorio se buscó reconocer las características fundamentales de la onda pulso y construir un sistema de obtención de SPI. Para esto se construyó un sistema ambulatorio de medición continua del índice pletismográfico quirúrgico. A este se le validó el funcionamiento mediante la medición de SPI durante una respuesta fisiológica parecida al dolor agudo. En la tabla 1 se observa como los resultados muestran un cambio significante del SPI cuando se aplica el estímulo frío. En promedio, el valor de SPI aumenta considerablemente durante el estimulo, pasando de 27.92 a 51.88. Esto es un incremento del 85.82% (51.88 - 27.92 = 23.96 / 27.92 = 0.8582 *100 = 85.82 %) respecto al valor basal. En el periodo de recuperación, el SPI disminuyó a un promedio de 30.94 acercandose nuevamente al valor basal. Esto indica que la respuesta que fue producida durante el estimulo frio fue transitoria y asociada temporalmente al frío. 
 
 # Conclusión
 
