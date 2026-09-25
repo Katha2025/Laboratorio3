@@ -9,11 +9,12 @@
 <p align="center">
 <img width="400"  alt="image" src="https://github.com/user-attachments/assets/c4b0249a-c5be-4507-b2f0-4f7c5450a987" />
 </p>
-* Imágen 1. Dibujo del circuito usado. *
-
 <p align="center">
-  <strong>Figura 1. Circuito para capturar las variaciones del volumen sanguíneo periférico.</strong>
+  <strong>Figura 1. Circuito utilizado para capturar las variaciones del volumen sanguíneo periférico.</strong>
 </p>
+
+
+
 
 <p align="center">
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/52b408fa-cf27-420c-b506-d1e81c147fac" />
