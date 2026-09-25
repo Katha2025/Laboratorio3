@@ -13,8 +13,14 @@
   <strong>Figura 1. Circuito utilizado para capturar las variaciones del volumen sanguíneo periférico.</strong>
 </p>
 
+En el circuito se hace uso de un transistor 2N3904 para controlar la excitación del sensor TCST110. El fototransistor TCST110 convierte las variaciones de luz en cambios de corriente, que posteriormente se transforman en una señal de tensión mediante R3. El uso del capacitor C1 y la resistencia R4 permite eliminar parte de la componente continua de la señal. El amplificador operacional LM358 incrementa la amplitud de la señal mediante una configuración no inversora, con una ganancia aproximada de 101 a bajas frecuencias (Av = 1 + R6/R5= 1 + 680kohm / 6.8kohm = 101). C2 modifica la respuesta en frecuencia de la realimentación para reducir componentes de alta frecuencia. Por ultimo, C3, C4, R7 y R8 funcionan como un divisor de voltaje para reducir los 3.3 v de la ESP32 a 1.6v para agregar un offset a la señal.
 
-
+<p align="center">
+<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/0fd8dab3-c10a-4096-aba0-a63fafcdb85f" />
+  </p>
+<p align="center">
+  <strong>Figura 2. Montaje de circuito utilizado para capturar las variaciones del volumen sanguíneo periférico.</strong>
+</p>
 
 <p align="center">
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/52b408fa-cf27-420c-b506-d1e81c147fac" />
