@@ -24,7 +24,12 @@ En el circuito se hace uso de un transistor 2N3904 para controlar la excitación
 
 2) Para hacer este montaje, se modifico el acoplador óptico TCST110 de manera que el fototransitor y el led no estuvieran mirandose entre sí, sino que ambos estuvieran mirando hacia arriba para que al poner el dedo el led transmitiera luz por medio del tejido y el fototransitor detectara su salida para identificar la onda pletismográfica del sujeto.
 
-[ Foto del sensor]
+<p align="center">
+<img width="1505" height="1567" alt="image" src="https://github.com/user-attachments/assets/809d5ae9-f567-42e0-8661-a0f6bfbfbfb1" />
+  </p>
+<p align="center">
+  <strong>Figura 3. Sensor modificado para capturar las variaciones del volumen sanguíneo periférico.</strong>
+</p>
 
 3) Utilizando el microcontrolador ESP32 al igual que un osciloscopio, se verificó que el circuito era capaz de registrar las variaciones del volumen sanguíneo periférico.
 
@@ -317,37 +322,43 @@ El código utilizado para esta etapa se encuentra disponible en el siguiente enl
 
 La Figura 10 presenta el procesamiento completo de la señal PPG adquirida durante 120 segundos. La señal fue suavizada mediante una media móvil y posteriormente se aplicó el método del alpinista para identificar los picos sistólicos y los valles asociados a cada latido. La detección se mantuvo durante las tres etapas del protocolo.
 
+<p align="center">
 <img width="1600" height="485" alt="image" src="https://github.com/user-attachments/assets/c4635e1a-06d5-494f-a7c3-a1c45e6deaf9" />
-
-**Figura 10.** Señal PPG registrada durante 120 s y detección de picos sistólicos y valles mediante el método del alpinista.
+<p align="center">
+  <strong>Figura 10. Señal PPG registrada durante 120 s y detección de picos sistólicos y valles mediante el método del alpinista.</strong>
+</p>
 
 ## Acercamientos de la señal PPG durante el protocolo
 
 Con el fin de observar con mayor detalle la forma de onda y la detección realizada, se seleccionaron segmentos representativos de las etapas de reposo, estímulo frío y recuperación.
 
+<p align="center">
 <img width="1600" height="499" alt="image" src="https://github.com/user-attachments/assets/d6318f3a-9323-4985-ab99-6a5b6583ca1c" />
+<p align="center">
+  <strong>Figura 11. Acercamiento de la señal PPG durante la etapa de reposo (aproximadamente entre 23 y 37 s).</strong>
+</p>
 
-**Figura 11.** Acercamiento de la señal PPG durante la etapa de reposo (aproximadamente entre 23 y 37 s).
-
-
+<p align="center">
 <img width="1593" height="506" alt="image" src="https://github.com/user-attachments/assets/34b22c74-057c-4f1d-b882-abd5b1f9b399" />
+<p align="center">
+  <strong>Figura 12. Acercamiento de la señal PPG durante la aplicación del estímulo frío adaptado (aproximadamente entre 41 y 61 s).</strong>
+</p>
 
-**Figura 12.** Acercamiento de la señal PPG durante la aplicación del estímulo frío adaptado (aproximadamente entre 41 y 61 s).
-
-
+<p align="center">
 <img width="1600" height="502" alt="image" src="https://github.com/user-attachments/assets/cf2fa7bf-924f-411f-ba46-6b6a51394ed1" />
-
-**Figura 13.** Acercamiento de la señal PPG durante la etapa de recuperación (aproximadamente entre 95 y 109 s).
+<p align="center">
+  <strong>Figura 13. Acercamiento de la señal PPG durante la etapa de recuperación (aproximadamente entre 95 y 109 s).</strong>
+</p>
 
 ## Evolución temporal del SPI
 
 A partir de los picos y valles detectados se calculó la amplitud de pulso fotopletismográfica (PPGA) y el intervalo entre latidos (HBI). Estas variables se normalizaron y se combinaron para obtener un valor de SPI por cada latido. La Figura 14 muestra la evolución del índice durante los 120 segundos del protocolo.
 
-
+<p align="center">
 <img width="1600" height="742" alt="image" src="https://github.com/user-attachments/assets/e7198dc9-1d38-4d11-b12f-2772b1609e33" />
-
-**Figura 14.** Señal PPG, picos y valles detectados, y evolución del SPI calculado para cada latido durante el protocolo de reposo, estímulo frío adaptado y recuperación.
-
+<p align="center">
+  <strong>Figura 14. Señal PPG, picos y valles detectados, y evolución del SPI calculado para cada latido durante el protocolo de reposo, estímulo frío adaptado y recuperación.</strong>
+</p>
 
 ## Resumen cuantitativo por etapa
 
