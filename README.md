@@ -83,7 +83,7 @@ La normalización de las variables permite llevarlas a una escala común antes d
 
 $$
 \boxed{
-X_{norm}=
+X_{norm}= 100  *
 \frac{X-X_{min}}
 {X_{max}-X_{min}}
 }
