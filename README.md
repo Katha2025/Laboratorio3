@@ -223,21 +223,17 @@ El análisis de estas variables permite estudiar cambios fisiológicos asociados
 
 
 
+## Procedimiento:
+### 2) MATLAB
 
-# 2) MATLAB
-
-# 3) "Pruebas y Cold Pressor Test"
-
-
-
-# 4) Evolución del SPI en función del tiempo 
+### 3) "Pruebas y Cold Pressor Test"
 
 
 
+### 4) Evolución del SPI en función del tiempo 
 
-# Parte C
 
-
+# Resultados
 
 # Análisis de los Resultados 
 
@@ -247,8 +243,6 @@ El análisis de estas variables permite estudiar cambios fisiológicos asociados
 
 
 # Preguntas
-
-
 
 **• Pregunta 1: ¿Cómo se relacionan las variaciones del volumen sanguíneo
 periférico con el balance autonómico?**
